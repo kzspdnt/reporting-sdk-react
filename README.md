@@ -27,8 +27,8 @@ dependencies {
 }
 ```
 
-You need is to copy native bridge files [EuvicSdkTrackerAndroidPackage.java]() and [EuvicMobile.java]() to your project. 
-Rememeber to add ```java packages.add(new EuvicSdkTrackerAndroidPackage());``` line to your [MainApplication.java]() file.
+You need is to copy native bridge files [EuvicSdkTrackerAndroidPackage.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/EuvicSdkTrackerAndroidPackage.java) and [EuvicMobile.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/EuvicMobile.java) to your project. 
+Rememeber to add ```java packages.add(new EuvicSdkTrackerAndroidPackage());``` line to your [MainApplication.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/MainApplication.java#L30) file.
 
 ### iOS
 
@@ -39,7 +39,7 @@ pod 'EuvicMobileSDK', '~> 0.2.0'
 
 You can also use framework binary file `EuvicMobileSDK.xcframework` and add it to your project.
 
-All you need is to copy native bridge files [EuvicMobileBridge.m]() and [EuvicMobile.swift]() to your project. 
+All you need is to copy native bridge files [EuvicMobileBridge.m](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/ios/EuvicMobileBridge.m) and [EuvicMobile.swift](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/ios/EuvicMobile.swift) to your project. 
 
 And add following import to your project bridging header:
 ```obj-c
