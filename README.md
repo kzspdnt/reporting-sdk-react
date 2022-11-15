@@ -68,8 +68,14 @@ Simply add the following code to your AppDelegate.swift
 | `currency` | String  | Represents default shop currency. If currency is not provided for each product, this value will be used. Should be a three letter value consistent with ISO 4217 norm. Default value is EUR. | Optional |
 | `allowSensitiveData` | Bool  | Determines if the library should track sensitive user data such as location or IP address. Default value is true. | Optional |
 
-### Android Advertising ID
-To use system ad identifier add this line to your ```AndroidManifest.xml``` file.
+
+### Android Advertising ID (AAID)
+
+It's **required** to provide the application with the AAID. Only with this identifier it's possible to show ads to the given user.
+
+If user's privacy policy on the device does not permit the personalized advertising - no ads will be shown. Euvic Mobile SDK will still report user activity for statistical purposes.
+
+To provide system ad identifier add this line to your `AndroidManifest.xml` file:
 ```xml
 <manifest xlmns:android...>
  ...
