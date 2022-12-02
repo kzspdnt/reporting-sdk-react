@@ -27,8 +27,8 @@ dependencies {
 }
 ```
 
-You need is to copy native bridge files [EuvicSdkTrackerAndroidPackage.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/EuvicSdkTrackerAndroidPackage.java) and [EuvicMobile.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/EuvicMobile.java) to your project. 
-Rememeber to add ```java packages.add(new EuvicSdkTrackerAndroidPackage());``` line to your [MainApplication.java](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/android/app/src/main/java/com/euvicsdkreactnativedemo/MainApplication.java#L30) file.
+You need is to copy native bridge files [EuvicSdkTrackerAndroidPackage.java]() and [EuvicMobile.java]() to your project. 
+Rememeber to add ```java packages.add(new EuvicSdkTrackerAndroidPackage());``` line to your [MainApplication.java]() file.
 
 ### iOS
 
@@ -39,7 +39,7 @@ pod 'EuvicMobileSDK', '~> 0.2.0'
 
 You can also use framework binary file `EuvicMobileSDK.xcframework` and add it to your project.
 
-All you need is to copy native bridge files [EuvicMobileBridge.m](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/ios/EuvicMobileBridge.m) and [EuvicMobile.swift](https://github.com/Clickonometrics/reporting-sdk-react/blob/main/ios/EuvicMobile.swift) to your project. 
+All you need is to copy native bridge files [EuvicMobileBridge.m]() and [EuvicMobile.swift]() to your project. 
 
 And add following import to your project bridging header:
 ```obj-c
@@ -68,14 +68,8 @@ Simply add the following code to your AppDelegate.swift
 | `currency` | String  | Represents default shop currency. If currency is not provided for each product, this value will be used. Should be a three letter value consistent with ISO 4217 norm. Default value is EUR. | Optional |
 | `allowSensitiveData` | Bool  | Determines if the library should track sensitive user data such as location or IP address. Default value is true. | Optional |
 
-
-### Android Advertising ID (AAID)
-
-It's **required** to provide the application with the AAID. Only with this identifier it's possible to show ads to the given user.
-
-If user's privacy policy on the device does not permit the personalized advertising - no ads will be shown. Euvic Mobile SDK will still report user activity for statistical purposes.
-
-To provide system ad identifier add this line to your `AndroidManifest.xml` file:
+### Android Advertising ID
+To use system ad identifier add this line to your ```AndroidManifest.xml``` file.
 ```xml
 <manifest xlmns:android...>
  ...
@@ -281,3 +275,4 @@ Represents a product instance
 | `price` | String | represents products value | Required |
 | `currency` | String | represents products price currency | Optional |
 | `quantity` | String | depending on type of event, it can represents added, removed or in basket quantity of the product | Required |
+

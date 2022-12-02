@@ -205,7 +205,8 @@ function productsOrderedEvent() {
 function showBrowser() {
   NativeModules.EuvicMobile.getCurrentUserId( (value: string) =>  {
     const userId = Buffer.from(value, 'utf-8').toString('base64')
-    Linking.openURL("https://static.clickonometrics.pl/previews/campaignsPreview.html?key=zGvjBvroFc7onruVlmSoy3foBHLG4Upq&user_id=" + userId + "&user_type=IDFA")
+    const userType = Platform.OS === 'ios' ? 'IDFA' : 'AAID' 
+    Linking.openURL("https://static.clickonometrics.pl/previews/campaignsPreview.html?key=zGvjBvroFc7onruVlmSoy3foBHLG4Upq&user_id=" + userId + "&user_type=" + userType)
   })
 }
 

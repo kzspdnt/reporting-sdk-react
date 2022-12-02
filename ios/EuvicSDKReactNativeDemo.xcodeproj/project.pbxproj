@@ -215,7 +215,9 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 889FLUST5R;
 						LastSwiftMigration = 1400;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -497,7 +499,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Distribution: Speednet Sp. z o.o. (889FLUST5R)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2211090000;
+				DEVELOPMENT_TEAM = 889FLUST5R;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EuvicSDKReactNativeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,8 +514,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.speednet.euvicmobilesdkreactdemo;
 				PRODUCT_NAME = EuvicSDKReactNativeDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "EuvicMobileSDK React Demo App Store";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -523,7 +529,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "Apple Distribution: Speednet Sp. z o.o. (889FLUST5R)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 2211090000;
+				DEVELOPMENT_TEAM = 889FLUST5R;
 				INFOPLIST_FILE = EuvicSDKReactNativeDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,8 +543,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.speednet.euvicmobilesdkreactdemo;
 				PRODUCT_NAME = EuvicSDKReactNativeDemo;
+				PROVISIONING_PROFILE_SPECIFIER = "EuvicMobileSDK React Demo App Store";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
